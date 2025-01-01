@@ -78,6 +78,10 @@ const Courses = () => {
     activeCategory === 'all' || course.category === activeCategory
   );
 
+  const handleLearnMore = (courseId) => {
+    window.location.href = `/courses/${courseId}`;
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       {/* Category Navigation */}
@@ -146,7 +150,7 @@ const Courses = () => {
                   <div className="mt-6">
                     <button 
                       className="w-full bg-[#61C36C] hover:bg-[#4fa95a] text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
-                      onClick={() => window.location.href = `/courses/${course.id}`}
+                      onClick={() => handleLearnMore(course.id)}
                     >
                       Learn More
                       <svg 
