@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "devCommand": "npm run start",
-  "outputDirectory": "build",
   "framework": "create-react-app",
   "routes": [
     {
@@ -10,4 +7,4 @@
       "dest": "/index.html"
     }
   ]
-} 
+}
