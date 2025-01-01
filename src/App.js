@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
-        <h1 className="text-4xl font-bold text-center py-10">HCA Training</h1>
+        <h1 className="text-4xl font-bold text-center py-10 text-black">HCA Training</h1>
         <Navbar />
         <Routes>
           <Route path="/" element={
